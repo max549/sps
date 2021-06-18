@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="chat">
+            <div class="caht__header">
+                <div class="miantitle block">
+                    <div class="miantitle__logo">
+                        <div class="miantitle__logo-line"></div>
+                        <div class="miantitle__logo-line"></div>
+                        <div class="miantitle__logo-circle"></div>
+                    </div>
+                    <h1 class="miantitle-text">SPS</h1>
+                </div>
+                <a href="/" class="caht__header-btn">Leave Room</a>
+                <button class="caht__header-btn caht__clear-btn">Clear chat</button>
+            </div>
+            <div class="chat__content">
+                <div class="chat__info">
+                    <h3 class="chat__info-title"></h3>
+                    <ul class="chat__info-users"></ul>
+                </div>
+                <div class="chat__mainwall">
+                    
+                </div>
+                <div class="chat__form-container">
+                    <form class="chat__form">
+                        <input type="text" id="msg" placeholder="Enter message..." required autocomplete="off">
+                        <button type="submit" class="chat__form-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="chat__roominfMbl">
+                <h2 class="chat__roominfMbl-title">Room:</h2>
+                <p class="roominfMbl__nameOfRoom"></p>
+                <div class="chat__buttonMbl chat__roomMbl">
+                    <p class="chat__buttonMbl-text">Room</p>
+                </div>
+            </div>
+            <div class="chat__usersinfMbl">
+                <h2 class="chat__usersinfMbl-title">Users:</h2>
+                <div class="chat__usersinfMbl-ul">
+                    
+                </div>
+                <div class="chat__buttonMbl chat__usersMbl">
+                    <p class="chat__buttonMbl-text">Users</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
